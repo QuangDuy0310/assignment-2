@@ -164,10 +164,10 @@ def test_forget_password(driver):
      # Nhấn vào "Forget Password?" để điều hướng đến trang quên mật khẩu
     driver.find_element(By.XPATH, "//a[@href='/user-forget-password']").click()
       # Điền thông tin email vào trường email trên trang quên mật khẩu
-    driver.find_element(By.ID, "email").send_keys("anhpham170920031709@gmail.com")
+    driver.find_element(By.ID, "email").send_keys("quangduy.phung03@gmail.com")
     time.sleep(5)
 # Chờ nút "Send" có thể nhấp được
-    button = driver.find_element(By.XPATH, "//button[@type='submit' and text(🙁'Send']")
+    button = driver.find_element(By.XPATH, "//button[@type='submit' and text()='Send']")
     button.click()
     time.sleep(5)
     try:

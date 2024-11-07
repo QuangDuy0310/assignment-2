@@ -102,7 +102,7 @@ def test_review_product(driver: webdriver.Chrome):
 
     time.sleep(5)  # Đợi một chút để xem kết quả nhập
 # Wait for the button to be clickable
-    button = driver.find_element(By.XPATH, "//button[@type='submit' and text(🙁'Send']")
+    button = driver.find_element(By.XPATH, "//button[@type='submit' and text()='Send']")
     button.click()
     time.sleep(5)
 
